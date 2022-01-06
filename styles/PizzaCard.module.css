@@ -25,3 +25,16 @@
   font-weight: bold;
   color: #666;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .desc,
+  .price {
+    font-size: 24px;
+  }
+}

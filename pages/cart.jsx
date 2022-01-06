@@ -6,50 +6,87 @@ const Cart = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <table className={styles.table}>
-          <tr className={styles.tr}>
-            <th>asdq</th>
-            <th>qasd</th>
-            <th>qwqweq</th>
-            <th>qweasd</th>
-            <th>qasdas</th>
+          <tr className={styles.trTitle}>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Extras</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
           </tr>
-          <tr>
+          <tr className={styles.tr}>
             <td>
-              <div className={imgContainer}>
-                <Image src="/img/qwe.jpg" layout="fill" objectFit="cover" />
+              <div className={styles.imgContainer}>
+                <Image
+                  src="/img/pizza.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt=""
+                />
               </div>
             </td>
             <td>
-              <span className={styles.name}>NAME</span>
+              <span className={styles.name}>CORALZO</span>
             </td>
             <td>
-              <span className={styles.extras}>Double, spicy</span>
+              <span className={styles.extras}>
+                Double ingredient, spicy sauce
+              </span>
             </td>
             <td>
-              <span className={styles.price}>Amount of money</span>
+              <span className={styles.price}>$19.90</span>
             </td>
             <td>
-              <span className={styles.quantity}>quantity</span>
+              <span className={styles.quantity}>2</span>
             </td>
             <td>
-              <span className={styles.total}>total</span>
+              <span className={styles.total}>$39.80</span>
+            </td>
+          </tr>
+          <tr className={styles.tr}>
+            <td>
+              <div className={styles.imgContainer}>
+                <Image
+                  src="/img/pizza.png"
+                  layout="fill"
+                  objectFit="cover"
+                  alt=""
+                />
+              </div>
+            </td>
+            <td>
+              <span className={styles.name}>CORALZO</span>
+            </td>
+            <td>
+              <span className={styles.extras}>
+                Double ingredient, spicy sauce
+              </span>
+            </td>
+            <td>
+              <span className={styles.price}>$19.90</span>
+            </td>
+            <td>
+              <span className={styles.quantity}>2</span>
+            </td>
+            <td>
+              <span className={styles.total}>$39.80</span>
             </td>
           </tr>
         </table>
-        <div className={styles.right}>
-          <div className={styles.wrapper}>
-            <h2 className={styles.title}>CART TOTAL</h2>
-            <div className={styles.totalText}>
-              <b className={styles.totalTextTitle}>Subtotal:</b>$79.60
-            </div>
-            <div className={styles.totalText}>
-              <b className={styles.totalTextTitle}>Discount:</b>$0.00
-            </div>
-            <div className={styles.totalText}>
-              <b className={styles.totalTextTitle}>Total:</b>$79.60
-            </div>
-            <button className={styles.button}>CHECKOUT NOW!</button>
+      </div>
+      <div className={styles.right}>
+        <div className={styles.wrapper}>
+          <h2 className={styles.title}>CART TOTAL</h2>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Subtotal:</b>$79.60
           </div>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Discount:</b>$0.00
+          </div>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Total:</b>$79.60
+          </div>
+          <button className={styles.button}>CHECKOUT NOW!</button>
         </div>
       </div>
     </div>
